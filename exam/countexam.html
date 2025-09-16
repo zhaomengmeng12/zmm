@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../layui-v2.6.3/css/layui.css" media="all">
+    <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="../css/public.css" media="all">
+</head>
+<body>
+<div class="layuimini-container">
+	<div class="layui-card-header"><i class="fa fa-line-chart icon"></i>月考均分统计</div>
+		<div class="layui-card-body">
+			<div id="echarts-records" style="width: 100%;min-height:500px"></div>
+		</div>													
+</div>
+<script src="../layui-v2.6.3/layui.js" charset="utf-8"></script>
+<script src="../js/lay-config.js?v=1.0.4" charset="utf-8"></script>
+<script>
+    layui.use(['layer', 'miniTab','echarts'], function () {
+        var $ = layui.jquery,
+            layer = layui.layer,
+            miniTab = layui.miniTab,
+            echarts = layui.echarts;
+
+        miniTab.listen();
+        /**
+         * 报表功能
+         */
+        var echartsRecords = echarts.init(document.getElementById('echarts-records'), 'walden');
+        var optionRecords = {
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['语文','数学','英语','物理','化学','生物','历史','政治','地理']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['月考1','月考2','月考3','月考4']
+            },
+            yAxis: {
+                type: 'value',
+				data:[30,40,50,60,70,80,90,100,110,120],
+				min:30,
+				max:120
+            },
+            
+            series: [
+                {
+                    name:'语文',
+                    type:'line',
+                    data:[88,89,93,96]
+                },
+                {
+                    name:'数学',
+                    type:'line',
+                    data:[86,102,115,96]
+                },
+                {
+                    name:'英语',
+                    type:'line',
+                    data:[103,112,89,94]
+                },
+                {
+                    name:'物理',
+                    type:'line',
+                    data:[43,56,33,60]
+                },
+                {
+                    name:'化学',
+                    type:'line',
+                    data:[52,61,70,53]
+                },
+				{
+				    name:'生物',
+				    type:'line',
+				    data:[55,61,52,65]
+				},
+				{
+				    name:'历史',
+				    type:'line',
+				    data:[62,71,61,53]
+				},
+				{
+				    name:'政治',
+				    type:'line',
+				    data:[64,73,66,59]
+				},
+				{
+				    name:'地理',
+				    type:'line',
+				    data:[56,62,53,43]
+				}
+            ]
+        };
+        echartsRecords.setOption(optionRecords);
+
+        // echarts 窗口缩放自适应
+        window.onresize = function(){
+            echartsRecords.resize();
+        }
+
+    });
+</script>
+</body>
+</html>

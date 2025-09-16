@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+  <!-- 请勿在项目正式环境中引用该 layui.css 地址 -->
+  <link href="//unpkg.com/layui@2.11.6/dist/css/layui.css" rel="stylesheet">
+  <style>
+  	.required::before {
+  		/* 星号内容 */
+  		content: "*";
+  			/* 红色 */
+  		color: #ff0000;
+  		/* 与文字保持一点距离 */
+  		margin-right: 4px;
+  	/* 星号加粗 */
+  		font-weight: bold;				
+  	}
+  </style>
+</head>
+<body>
+<form class="layui-form">
+  <div class="layui-form-item">
+  	<label class="layui-form-label required">班级名称</label>
+  	<div class="layui-input-block">
+  	<input id="classid" type="text" name="classid" class="layui-input" lay-verify="required" autocomplete="off"
+  		lay-reqtext="班级名称不能为空!" placeholder="请输入班级名称">
+  		</div>
+  </div>
+  <div class="layui-form-item">
+    <label  class="layui-form-label required">年级</label>
+	<div class="layui-input-block">
+    <div class="layui-input-inline">
+      <select name="grade">
+		<option value="">请选择年级</option>
+        <option value="高一">高一</option>
+        <option value="高二">高二</option>
+        <option value="高三">高三</option>
+        <option value="复习班">复习班</option>
+      </select>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label required">班主任</label>
+    <div class="layui-input-block">
+    <input id="classteacher" type="text" name="classteacher" class="layui-input" lay-verify="required" autocomplete="off"
+  	   lay-reqtext="班主任不能为空" placeholder="请输入班主任姓名" >
+       </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label required">班级人数</label>
+    <div class="layui-input-block">
+    <input id="classnum" type="password" name="classnum" class="layui-input" lay-verify="required" autocomplete="off"
+  	   lay-reqtext="班级人数不能为空" placeholder="请输入班级人数" >
+       </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-inline">
+      <label  class="layui-form-label required">入学日期</label>
+      <div class="layui-input-inline layui-input-wrap">
+        <div class="layui-input-prefix">
+          <i class="layui-icon layui-icon-date"></i>
+        </div>
+        <input type="text" name="date" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+  </div>
+  <div class="layui-form-item">
+  	<label class="layui-form-label required">班级状态</label>
+  	<div class="layui-input-block">
+  		<input type="radio" name="classstate" value="正常" title="正常" checked="">
+  		<input type="radio" name="classstate" value="已毕业" title="已毕业">
+  	</div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button type="submit" class="layui-btn" lay-submit lay-filter="demo1">立即提交</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>
+  
+<!-- 请勿在项目正式环境中引用该 layui.js 地址 -->
+<script src="//unpkg.com/layui@2.11.6/dist/layui.js"></script>
+<script>
+layui.use(['form', 'laydate'], function(){
+  var laydate = layui.laydate;
+  // 日期
+  laydate.render({
+    elem: '#date'
+  });
+});
+</script>
+
+</body>
+</html>

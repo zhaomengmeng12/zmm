@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+		<link rel="stylesheet" href="../layui-v2.6.3/css/layui.css" media="all">
+    <body>
+        <div class="layui-form">
+			<div class="layui-form-item">
+				<label class="layui-form-label">教师</label>
+				<div class="layui-input-block">
+					<input type="radio" name="teacher"  title="张三">
+					<input type="radio" name="teacher"  title="李四">
+					<input type="radio" name="teacher"  title="王五">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">教学态度</label>
+				<div class="layui-input-block">
+					<input type="radio" name="stitude"  title="耐心答疑">
+					<input type="radio" name="stitude"  title="积极互动">
+					<input type="radio" name="stitude"  title="回应消极">
+				</div>
+			</div>
+			<div class="layui-form-item">
+			    <label class="layui-form-label">教学内容</label>
+			    <div class="layui-input-block">
+			        <input type="radio" name="content" title="内容清晰完整知识点讲解清晰">
+			        <input type="radio" name="content" title="内容完整部分知识点不透彻">
+			        <input type="radio" name="content" title="内容混乱难以理解">
+			    </div>
+			</div>
+			<div class="layui-form-item">
+			    <label class="layui-form-label">教学方法</label>
+			    <div class="layui-input-block">
+			        <input type="radio" name="method" title="灵活多样">
+			        <input type="radio" name="method" title="单一乏味">
+			        <input type="radio" name="method" title="枯燥低效">
+			    </div>
+			</div>
+			<div class="layui-form-item">
+			    <label class="layui-form-label">课堂氛围</label>
+			    <div class="layui-input-block">
+			        <input type="radio" name="atmosphere" title="轻松活跃">
+			        <input type="radio" name="atmosphere" title="平淡一般">
+			        <input type="radio" name="atmosphere" title="沉闷冷清">
+			    </div>
+			</div>
+			<div class="layui-form-item">
+			    <label class="layui-form-label">教学效果</label>
+			    <div class="layui-input-block">
+			        <input type="radio" name="effect" title="轻松掌握">
+			        <input type="radio" name="effect" title="基本理解">
+			        <input type="radio" name="effect" title="难以掌握">
+			    </div>
+			</div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">其他建议</label>
+                <div class="layui-input-block">
+                    <textarea   name="remark" class="layui-textarea" placeholder="请输入你的建议"></textarea>
+                </div>
+            </div>
+			<div class="layui-form-item">
+			    <div class="layui-input-block">
+			        <button class="layui-btn layui-btn-normal" lay-submit lay-filter="saveBtn">确认保存</button>
+			    </div>
+			</div><!-- 提交按钮结束 -->
+        </div>
+        <script src="../layui-v2.6.3/layui.js"></script>
+    </body>
+</html>

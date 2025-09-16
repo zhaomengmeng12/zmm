@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+  <!-- 请勿在项目正式环境中引用该 layui.css 地址 -->
+  <link href="//unpkg.com/layui@2.11.6/dist/css/layui.css" rel="stylesheet">
+  <style>
+  	.required::before {
+  		/* 星号内容 */
+  		content: "*";
+  			/* 红色 */
+  		color: #ff0000;
+  		/* 与文字保持一点距离 */
+  		margin-right: 4px;
+  	/* 星号加粗 */
+  		font-weight: bold;				
+  	}
+  </style>
+</head>
+<body>
+<form class="layui-form">
+  <div class="layui-form-item">
+  	<label class="layui-form-label required">课程名称</label>
+  	<div class="layui-input-block">
+  	<input id="courseid" type="text" name="courseid" class="layui-input" lay-verify="required" autocomplete="off"
+  		lay-reqtext="课程名称不能为空!" placeholder="请输入课程名称">
+  		</div>
+  </div>
+  <div class="layui-form-item">
+    <label  class="layui-form-label required">课程类型</label>
+	<div class="layui-input-block">
+    <div class="layui-input-inline">
+		<select name="course">
+		  <option value="">请选择</option>
+		  <option value="美育">美育</option>
+		  <option value="体育">体育</option>
+		</select>
+    </div>
+  </div>
+ <div class="layui-form-item">
+   <label class="layui-form-label required">授课年级</label>
+   <div class="layui-input-block">
+	<div class="layui-input-inline">
+	  <select name="course">
+		<option value="">请选择</option>
+	    <option value="高一">高一</option>
+	    <option value="高二">高二</option>
+	    <option value="高三">高三</option>
+	  </select>
+	</div>
+    </div>
+ </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label required">授课老师</label>
+    <div class="layui-input-block">
+    <input id="teach" type="text" name="teach" class="layui-input" lay-verify="required" autocomplete="off"
+  	   lay-reqtext="授课老师不能为空" placeholder="请输入授课老师姓名" >
+       </div>
+  </div>
+  <div class="layui-form-item">
+      <label class="layui-form-label">课程备注</label>
+      <div class="layui-input-block">
+          <textarea   name="remark" class="layui-textarea" placeholder="请输入课程说明,教学目标等"></textarea>
+      </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button type="submit" class="layui-btn" lay-submit lay-filter="demo1">立即公布</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>
+  
+<!-- 请勿在项目正式环境中引用该 layui.js 地址 -->
+<script src="//unpkg.com/layui@2.11.6/dist/layui.js"></script>
+<script>
+layui.use(['form', 'laydate'], function(){
+  var laydate = layui.laydate;
+  // 日期
+  laydate.render({
+    elem: '#date'
+  });
+});
+</script>
+
+</body>
+</html>

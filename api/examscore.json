@@ -1,0 +1,97 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "username": "张三",
+      "class":"高一(1)班",
+	  "yuwen":"88",
+	  "shuxue":"102",
+	  "yingyu":"112",
+	  "wuli":"53",
+	  "huaxue":"46",
+	  "shengwu":"62"
+    },
+    {
+      "username": "李四",
+     "class":"高一(2)班",
+	 "yuwen":"86",
+	  "shuxue":"100",
+	   "yingyu":"115",
+	   "wuli":"36",
+	    "huaxue":"52",
+		 "shengwu":"61"
+    },
+    {
+      "username": "王五",
+     "class":"高二(1)班",
+	 "yuwen":"87",
+	  "shuxue":"96",
+	   "yingyu":"102",
+	   "wuli":"46",
+	  "huaxue":"52",
+	   "shengwu":"56"
+    },
+    {
+      "username": "张四",
+      "class":"高二(2)班",
+	  "yuwen":"92",
+	  "shuxue":"96",
+	   "yingyu":"103",
+	   "wuli":"61",
+	  "huaxue":"65",
+	   "shengwu":"55"
+    },
+    {
+      "username": "张五",
+      "class":"高三(1)班",
+	  "yuwen":"91",
+	  "shuxue":"96",
+	   "yingyu":"91",
+	   "wuli":"53",
+	    "huaxue":"56",
+		 "shengwu":"65"
+    },
+    {
+      "username": "张六",
+     "class":"高三(2)班",
+	 "yuwen":"80",
+	 "shuxue":"98",
+	  "yingyu":"112",
+	  "wuli":"33",
+	   "huaxue":"46",
+	    "shengwu":"62"
+    },
+    {
+      "username": "王四",
+    "class":"理1班",
+	"yuwen":"88",
+	"shuxue":"106",
+	 "yingyu":"106",
+	 "wuli":"60",
+	  "huaxue":"36",
+	   "shengwu":"52"
+    },
+    {
+      "username": "张八",
+     "class":"理2班",
+	 "yuwen":"84",
+	 "shuxue":"112",
+	  "yingyu":"103",
+	  "wuli":"63",
+	   "huaxue":"46",
+	    "shengwu":"72"
+    },
+    {
+      "username": "李六",
+     "class":"文1班",
+	 "yuwen":"82",
+	 "shuxue":"86",
+	  "yingyu":"112",
+	  "lishi":"72",
+	  "zhengzhi":"77",
+	  "dili":"52"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+  <!-- 请勿在项目正式环境中引用该 layui.css 地址 -->
+  <link href="//unpkg.com/layui@2.11.6/dist/css/layui.css" rel="stylesheet">
+  <style>
+  	.required::before {
+  		/* 星号内容 */
+  		content: "*";
+  			/* 红色 */
+  		color: #ff0000;
+  		/* 与文字保持一点距离 */
+  		margin-right: 4px;
+  	/* 星号加粗 */
+  		font-weight: bold;				
+  	}
+  </style>
+</head>
+<body>
+<form class="layui-form">
+  <div class="layui-form-item">
+  	<label class="layui-form-label required">学生姓名</label>
+  	<div class="layui-input-block">
+  	<input id="username" type="text" name="username" class="layui-input" lay-verify="required" autocomplete="off"
+  		lay-reqtext="姓名不能为空!" placeholder="请输入姓名">
+  		</div>
+  </div>
+  <div class="layui-form-item">
+    <label  class="layui-form-label required">所在班级</label>
+	<div class="layui-input-block">
+    <div class="layui-input-inline">
+		<select name="class">
+		  <option value="">请选择</option>
+		  <option value="高一(1)班">高一(1)班</option>
+		  <option value="高一(2)班">高一(2)班</option>
+		  <option value="高二(1)班">高二(1)班</option>
+		  <option value="高二(2)班">高二(2)班</option>
+		  <option value="高三(1)班">高三(1)班</option>
+		  <option value="高三(2)班">高三(2)班</option>
+		</select>
+    </div>
+  </div>
+  <div class="layui-form-item">
+  	<label class="layui-form-label required">学号</label>
+  	<div class="layui-input-block">
+  	<input id="userid" type="text" name="userid" class="layui-input" lay-verify="required" autocomplete="off"
+  		lay-reqtext="学号不能为空!" placeholder="请输入学号">
+  		</div>
+  </div>
+  <div class="layui-form-item">
+  	<label class="layui-form-label required">美育选课</label>
+  	<div class="layui-input-block">
+  		<input type="radio" name="art"  title="传统书画">
+  		<input type="radio" name="art"  title="校园戏剧">
+  		<input type="radio" name="art"  title="音乐鉴赏">
+		<input type="radio" name="art"  title="传统服饰与礼仪">
+		<input type="radio" name="art"  title="朗诵与主持">
+		<input type="radio" name="art"  title="摄影美学">
+  	</div>
+  </div>
+ 
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button type="submit" class="layui-btn" lay-submit lay-filter="demo1">提交选课</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置选择</button>
+    </div>
+  </div>
+</form>
+  
+<!-- 请勿在项目正式环境中引用该 layui.js 地址 -->
+<script src="//unpkg.com/layui@2.11.6/dist/layui.js"></script>
+<script>
+layui.use(['form', 'laydate'], function(){
+  var laydate = layui.laydate;
+  // 日期
+  laydate.render({
+    elem: '#date'
+  });
+});
+</script>
+<form class="layui-form">
+  <div class="layui-form-item">
+  	<label class="layui-form-label required">学生姓名</label>
+  	<div class="layui-input-block">
+  	<input id="username" type="text" name="username" class="layui-input" lay-verify="required" autocomplete="off"
+  		lay-reqtext="姓名不能为空!" placeholder="请输入姓名">
+  		</div>
+  </div>
+  <div class="layui-form-item">
+    <label  class="layui-form-label required">所在班级</label>
+	<div class="layui-input-block">
+    <div class="layui-input-inline">
+		<select name="class">
+		  <option value="">请选择</option>
+		  <option value="高一(1)班">高一(1)班</option>
+		  <option value="高一(2)班">高一(2)班</option>
+		  <option value="高二(1)班">高二(1)班</option>
+		  <option value="高二(2)班">高二(2)班</option>
+		  <option value="高三(1)班">高三(1)班</option>
+		  <option value="高三(2)班">高三(2)班</option>
+		</select>
+    </div>
+  </div>
+  <div class="layui-form-item">
+  	<label class="layui-form-label required">学号</label>
+  	<div class="layui-input-block">
+  	<input id="userid" type="text" name="userid" class="layui-input" lay-verify="required" autocomplete="off"
+  		lay-reqtext="学号不能为空!" placeholder="请输入学号">
+  		</div>
+  </div>
+  <div class="layui-form-item">
+  	<label class="layui-form-label required">体育选课</label>
+  	<div class="layui-input-block">
+  		<input type="radio" name="PE"  title="羽毛球">
+  		<input type="radio" name="PE"  title="体育舞蹈">
+  		<input type="radio" name="PE"  title="形体拳">
+		<input type="radio" name="PE"  title="篮球">
+		<input type="radio" name="PE"  title="足球">
+		<input type="radio" name="PE"  title="乒乓球">
+  	</div>
+  </div>
+ 
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button type="submit" class="layui-btn" lay-submit lay-filter="demo1">提交选课</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置选择</button>
+    </div>
+  </div>
+</form>
+  
+<!-- 请勿在项目正式环境中引用该 layui.js 地址 -->
+<script src="//unpkg.com/layui@2.11.6/dist/layui.js"></script>
+<script>
+layui.use(['form', 'laydate'], function(){
+  var laydate = layui.laydate;
+  // 日期
+  laydate.render({
+    elem: '#date'
+  });
+});
+</script>
+</body>
+</html>

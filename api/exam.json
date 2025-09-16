@@ -1,0 +1,70 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "usergrade": "高一",
+	  "class":"高一(1)班",
+	  "time":"2025.9.15",
+	  "kaoshi":"语文",
+	  "renshu":"46"
+    },
+    {
+      "usergrade": "高一",
+	  "class":"高一(1)班",
+	  "kaoshi":"数学",
+	  "time":"2025.9.16",
+	  "renshu":"49"
+    },
+    {
+      "usergrade": "高二",
+	  "class":"高二(2)班",
+	  "kaoshi":"数学",
+	   "time":"2025.9.16",
+	   "renshu":"52"
+    },
+    {
+      "usergrade": "高二",
+	   "class":"高二(2)班",
+	  "kaoshi":"物理",
+	  "time":"2025.9.16",
+	   "renshu":"45"
+    },
+    {
+      "usergrade": "高三",
+	  "class":"高三(1)班",
+	   "kaoshi":"历史",
+	   "time":"2025.9.16",
+	   "renshu":"46"
+    },
+    {
+      "usergrade": "高三",
+	  "class":"高三(2)班", 
+	   "kaoshi":"化学",
+	   "time":"2025.9.17",
+	   "renshu":"50"
+    },
+    {
+      "usergrade": "复习班",
+	  "class":"理1班",
+	   "kaoshi":"生物",
+	   "time":"2025.9.18",
+	   "renshu":"46"
+    },
+    {
+      "usergrade": "复习班",
+      "class":"理2班",
+      "kaoshi":"语文",
+	  "time":"2025.9.15",
+	  "renshu":"43"
+    },
+    {
+      "usergrade": "复习班",
+      "class":"文1班",
+       "kaoshi":"政治",
+	   "time":"2025.9.15",
+	   "renshu":"42"
+    }
+  ]
+}

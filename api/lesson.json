@@ -1,0 +1,106 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "usergrade": "高一",
+	  "class":"高一(1)班",
+	  "course":"数学",
+	  "time":"2025.9.15",
+	  "tang":"第一节",
+	  "yingdao":"46",
+	  "shidao":"46",
+	  "qingjia":"0",
+	  "qjname":""
+    },
+    {
+      "usergrade": "高一",
+	  "class":"高一(1)班",
+	  "course":"语文",
+	  "time":"2025.9.15",
+	   "tang":"第一节",
+	   "yingdao":"49",
+	   "shidao":"48",
+	   "qingjia":"1",
+	   "qjname":"张三"
+    },
+    {
+      "usergrade": "高二",
+	  "class":"高二(2)班",
+	   "course":"英语",
+	   "time":"2025.9.15",
+	    "tang":"第一节",
+		"yingdao":"52",
+		"shidao":"50",
+		"qingjia":"2",
+		"qjname":"李三 李四"
+    },
+    {
+      "usergrade": "高二",
+	   "class":"高二(2)班",
+	  "course":"物理",
+	  "time":"2025.9.15",
+	   "tang":"第一节",
+	   "yingdao":"45",
+	   "shidao":"45",
+	   "qingjia":"0",
+	   "qjname":""
+    },
+    {
+      "usergrade": "高三",
+	  "class":"高三(1)班",
+	   "course":"历史",
+	   "time":"2025.9.15",
+	    "tang":"第一节",
+		"yingdao":"46",
+		"shidao":"46",
+		"qingjia":"0",
+		 "qjname":""
+    },
+    {
+      "usergrade": "高三",
+	  "class":"高三(2)班", 
+	   "course":"化学",
+	   "time":"2025.9.15",
+	    "tang":"第一节",
+		"yingdao":"50",
+		"shidao":"49",
+		"qingjia":"1",
+		 "qjname":"王五"
+    },
+    {
+      "usergrade": "复习班",
+	  "class":"理1班",
+	   "course":"生物",
+	   "time":"2025.9.15",
+	    "tang":"第一节",
+		"yingdao":"46",
+		"shidao":"46",
+		"qingjia":"0",
+		 "qjname":""
+    },
+    {
+      "usergrade": "复习班",
+      "class":"理2班",
+      "course":"语文",
+	  "time":"2025.9.15",
+	   "tang":"第一节",
+	   "yingdao":"43",
+	   "shidao":"43",
+	   "qingjia":"0",
+	    "qjname":""
+    },
+    {
+      "usergrade": "复习班",
+      "class":"文1班",
+       "course":"政治",
+	   "time":"2025.9.15",
+	    "tang":"第一节",
+		"yingdao":"42",
+		"shidao":"41",
+		"qingjia":"1",
+		 "qjname":"王六"
+    }
+  ]
+}
